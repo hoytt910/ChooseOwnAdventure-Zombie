@@ -27,15 +27,15 @@ def intro():
 
 ################ Student A Functions #####################
 def choice1():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    choice = simpledialog.askinteger("",
+                                     "You find a group, Do you trust them or keep moving.  Now you must choose 1 to go with them or 2 to stay in the store.")
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
+        messagebox.showinfo("",
+                            " The group are cannibals!! Their is no escape. You did not survive the apocalypse!")
 
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        messagebox.showinfo("",
+                            " You chose to continue loking in the store. You find a food truck")
     else:
         choice1()
 
