@@ -1,5 +1,5 @@
 # Choose.py
-# by [Taylor Hoyt]{Carlos Pliego}
+# by [Taylor Hoyt]{Carlos Pliego}(Bradley McMahan)
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
