@@ -14,10 +14,10 @@ w.pack()
 
 def intro():
     """ Introductory Function -> starts the story going """
-    messagebox.showinfo("Title", "You're name is Tom. "" Your at your house when you hear a loud expolsion." "You run outside and your're met with choas, it's the start of the Apocalypse!!")
-    messagebox.showinfo("Start", "You're home alone and running out of food and medicine. You have two options go to the hospital or go to the super market. ")
+    messagebox.showinfo("Title", "Your name is Tom. "" You're at your house when you hear a loud explosion." "You run outside and you're met with chaos, it's the start of the Apocalypse!!")
+    messagebox.showinfo("Start", "You're home alone and running out of food and medicine. You have two options, go to the hospital or go to the supermarket. ")
     choice = simpledialog.askinteger("Choose wisely",
-                                   "Choose 1 if you want to go to the super market. Choose 2 if you want some medicine: Type 1 or 2.")
+                                   "Choose 1 if you want to go to the supermarket. Choose 2 if you want some medicine: Type 1 or 2.")
     if choice == 1:
         choice1()
     elif choice == 2:
@@ -31,11 +31,11 @@ def choice1():
                                      "You find a group, Do you trust them or keep moving.  Now you must choose 1 to go with them or 2 to stay in the store.")
     if (choice == 1):
         messagebox.showinfo("",
-                            " The group are cannibals!! Their is no escape. You did not survive the apocalypse!")
+                            " The group are cannibals!! There is no escape. You did not survive the Apocalypse!")
 
     elif (choice == 2):
         messagebox.showinfo("",
-                            " You chose to continue loking in the store. You find a food truck")
+                            " You chose to continue looking in the store. You find a food truck")
     else:
         choice1()
 
