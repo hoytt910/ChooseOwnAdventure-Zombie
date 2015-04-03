@@ -1,5 +1,5 @@
-# Choose.py
-# by [Taylor Hoyt is the best]{Carlos Pliego}
+#Choose.py
+# by [Taylor Hoyt]{Carlos Pliego}(Bradley McMahan), Andy Ramirez
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
@@ -52,8 +52,10 @@ def choice2():
                             "You chose ok.  THE END")
     else:
         choice2()
+        
 
 ################ Main #####################
+        
 intro()
 
 root.destroy()
