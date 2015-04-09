@@ -65,8 +65,20 @@ def choice2():
         messagebox.showinfo("The End",
                             "You chose ok.  THE END")
     else:
-        choice2()        
+        choice2()
+############ Brad's Functions ##############
+def choice2():
+    choice = simpledialog.askinteger("",
+                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    if (choice == 1):
+        messagebox.showinfo("The End",
+                            "You chose right.  THE END")
 
+    elif (choice == 2):
+        messagebox.showinfo("The End",
+                            "You chose ok.  THE END")
+    else:
+        choice2()
 ################ Main #####################
         
 intro()
