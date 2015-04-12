@@ -43,8 +43,7 @@ def Hospital():
 
     elif (choice == 2):
         
-        messagebox.showinfo("Doctors Office",
-                            "While entering the office a zombie ")
+        
         Doc()
     else:
         Hospital()
@@ -89,6 +88,7 @@ def Hammer():
         
         messagebox.showinfo("" , " You chose to go home and not go with the group of three.")
         Dead()
+    
 
     else:
         Hammer()
@@ -98,8 +98,13 @@ def Winner():
     messagebox.showinfo("Winner" , " You live in the military base for the rest of your life. Winner!!")
 def Dead():
     messagebox.showinfo("Dead" , " When leaving the hospital there is a zombie horde and you get swarmed by 7 zombies and die.")
+
+
+
+
+
 def Doc():
-    messagebox.showinfo("Doc Office" , " adsj;flksjdf")
+    messagebox.showinfo("Doc Office" , " While walking into the Doctors Office a zombie jumps out and bites you. You should have gone in the ER. Your Dead!")
 
 
 ################ Carlos Functions #####################
@@ -115,7 +120,87 @@ def choice2():
                             "You chose ok.  THE END")
     else:
         choice2()
+
+
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
         
+        
+        Doc()
+    else:
+        Hospital()
+
+
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
+        
+        
+        Doc()
+    else:
+        Hospital()
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
+        
+        
+        Doc()
+    else:
+        Hospital()
+
+
+
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
+        
+        
+        Doc()
+    else:
+        Hospital()
+
+
 ################ Andy Functions ############
 def choice2():
     choice = simpledialog.askinteger("Choose wisely",
@@ -129,6 +214,70 @@ def choice2():
                             "You chose ok.  THE END")
     else:
         choice2()
+
+
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
+        
+        
+        Doc()
+    else:
+        Hospital()
+
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
+        
+        
+        Doc()
+    else:
+        Hospital()
+
+
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
+        
+        
+        Doc()
+    else:
+        Hospital()
+
+
+
+
+
 ############ Brad's Functions ##############
 def choice2():
     choice = simpledialog.askinteger("",
@@ -142,6 +291,83 @@ def choice2():
                             "You chose ok.  THE END")
     else:
         choice2()
+
+
+
+
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
+        
+        
+        Doc()
+    else:
+        Hospital()
+
+
+
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
+        
+        
+        Doc()
+    else:
+        Hospital()
+
+
+
+
+
+def Hospital():
+
+    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    if (choice == 1):
+        messagebox.showinfo("E.R.",
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
+
+    elif (choice == 2):
+        
+        
+        Doc()
+    else:
+        Hospital()
+
+
+
+
+
+
+
+
+
+
+
+
 ################ Main #####################
         
 intro()
