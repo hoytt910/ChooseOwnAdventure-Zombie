@@ -38,15 +38,68 @@ def Hospital():
                                      "You have two options: 1 for ER or 2 for Doctors Office. ")
     if (choice == 1):
         messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground. You have to  ")
+                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        ER()
 
     elif (choice == 2):
-        messagebox.showinfo("Hospital",
-                            " You chose to continue looking in the store. You find a food truck")
+        
+        messagebox.showinfo("Doctors Office",
+                            "While entering the office a zombie ")
+        Doc()
     else:
         Hospital()
 
+def ER():
+    
+    messagebox.showinfo("ER" , "While on the ground you notice a hammer to your right. You can easily push the zombie off but you might be able to kill it.You have two options. 1 to push the zombie off(Likley) or 2 go for the kill(Risky)!  ")
 
+    choice = simpledialog.askinteger("" , "Type 1 to push. Type 2 to go for the kill.")
+
+    if (choice == 1):
+        
+        messagebox.showinfo("Push" , "You push the zombie off and run into a side room. As you shut the door you hear a zombie groan and are bit on the sholder.")
+        Push()
+
+    elif (choice == 2):
+        
+        messagebox.showinfo("" , " When trying to grab the hammer the zombie overpowers you. Right when the zombie is about to bite you a group of three people pulls the zombie off of you. The Group asked you if you want to join them.")
+        Hammer()
+    else:
+        ER()
+    
+
+def Push():
+
+     messagebox.showinfo("Dead" , "You have been bitten. You are DEAD!")
+
+     
+
+def Hammer():
+    
+    messagebox.showinfo("What to do?" , " They said the need another member in there team.")
+
+    choice = simpledialog.askinteger("" , "Type 1 to go with them. Type 2 to go back home.")
+
+    if (choice == 1):
+        
+        messagebox.showinfo("Team" , "You chose to go with the group of three they bring you back to the military base they came from.")
+        Winner()
+
+    elif (choice == 2):
+        
+        messagebox.showinfo("" , " You chose to go home and not go with the group of three.")
+        Dead()
+
+    else:
+        Hammer()
+
+
+def Winner():
+    messagebox.showinfo("Winner" , " You live in the military base for the rest of your life. Winner!!")
+def Dead():
+    messagebox.showinfo("Dead" , " When leaving the hospital there is a zombie horde and you get swarmed by 7 zombies and die.")
+def Doc():
+    messagebox.showinfo("Doc Office" , " adsj;flksjdf")
 
 
 ################ Carlos Functions #####################
