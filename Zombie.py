@@ -108,7 +108,7 @@ def Doc():
 
 
 ################ Carlos Functions #####################
-def choice2():
+def Store():
     choice = simpledialog.askinteger("Choose wisely",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
     if (choice == 1):
@@ -202,7 +202,7 @@ def Hospital():
 
 
 ################ Andy Functions ############
-def choice2():
+def DownTown():
     choice = simpledialog.askinteger("Choose wisely",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
     if (choice == 1):
@@ -279,7 +279,7 @@ def Hospital():
 
 
 ############ Brad's Functions ##############
-def choice2():
+def StayHome():
     choice = simpledialog.askinteger("",
                                      "This is the next part of the story.  Now you must choose 1 or 2 again.")
     if (choice == 1):
