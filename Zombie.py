@@ -17,7 +17,7 @@ def intro():
     messagebox.showinfo("Title", "Your name is Taylor. "" You're at your house when you hear a loud explosion." "You run outside and you're met with chaos, it's the start of the Apocalypse!!")
     messagebox.showinfo("Start", "You're home alone and running out of food and medicine. You have four options, go to the hospital , store , down town, or stay home. ")
     choice = simpledialog.askinteger("Choose wisely",
-                                   "Choose wisley: 1 to go to the Hospital, 2 for the store, 3 for down town, 4 to stay home.")
+                                   "Choose wisley: 1 to go to the Hospital, 2 for the store, 3 to go Downtown, 4 to stay home.")
     if choice == 1:
         Hospital()
     elif choice == 2:
@@ -203,78 +203,80 @@ def Hospital():
 
 ################ Andy Functions ############
 def DownTown():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
-    if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
 
-    elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
-    else:
-        choice2()
-
-
-
-def Hospital():
-
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    messagebox.showinfo("DownTown" , " You have arrived Downtown and see that most of the city is overrun with Zombies already.")
     
     choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+                                     "You have two choices: 1 to run into to mall and gather supplies.  2 to steal a bus.")
     if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
-        ER()
+        messagebox.showinfo("Mall",
+                            "")
+        Mall()
 
     elif (choice == 2):
         
         
-        Doc()
+        Bus()
     else:
-        Hospital()
+        DownTown()
 
-
-def Hospital():
-
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+def Mall():
     
-    choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+    messagebox.showinfo("Mall" , " You walk into the Mall and a Zombie ")
+
+    choice = simpledialog.askinteger("" , "Type 1 to push. Type 2 to go for the kill.")
+
     if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
-        ER()
+        
+        messagebox.showinfo("Push" , "You push the zombie off and run into a side room. As you shut the door you hear a zombie groan and are bit on the sholder.")
+        Push()
 
     elif (choice == 2):
         
-        
-        Doc()
+        messagebox.showinfo("" , " When trying to grab the hammer the zombie overpowers you. Right when the zombie is about to bite you a group of three people pulls the zombie off of you. The Group asked you if you want to join them.")
+        Hammer()
     else:
-        Hospital()
-
-
-
-def Hospital():
-
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+        ER()
     
-    choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+
+def Push():
+
+     messagebox.showinfo("Dead" , "")
+
+     
+
+def Hammer():
+    
+    messagebox.showinfo("What to do?" , " ")
+
+    choice = simpledialog.askinteger("" , "")
+
     if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
-        ER()
+        
+        messagebox.showinfo("Team" , "")
+        Winner()
 
     elif (choice == 2):
         
-        
-        Doc()
+        messagebox.showinfo("" , " ")
+        Dead()
+    
+
     else:
-        Hospital()
+        Hammer()
 
 
+def Winner():
+    messagebox.showinfo("Winner" , " ")
+def Dead():
+    messagebox.showinfo("Dead" , "")
+
+
+
+
+
+def Bus():
+    messagebox.showinfo("Bus" , "You find a working bus and spend the rest of your life recruiting survivors to join you on the bus and help gather supplies.")
 
 
 
