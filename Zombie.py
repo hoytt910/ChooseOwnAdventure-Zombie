@@ -210,7 +210,7 @@ def DownTown():
                                      "You have two choices: 1 to run into to mall and gather supplies.  2 to steal a bus.")
     if (choice == 1):
         messagebox.showinfo("Mall",
-                            "")
+                            "You walk into the mall and forget to close the doors at the entrance. A horde of zombies follow you into the mall and start running towards you. You are cornered.")
         Mall()
 
     elif (choice == 2):
@@ -222,30 +222,30 @@ def DownTown():
 
 def Mall():
     
-    messagebox.showinfo("Mall" , " You walk into the Mall and a Zombie ")
+    messagebox.showinfo("Mall" , "You have 2 choices")
 
-    choice = simpledialog.askinteger("" , "Type 1 to push. Type 2 to go for the kill.")
+    choice = simpledialog.askinteger("" , "Type 1 to Give Up and let the zombies kill you. Type 2 to try and fight off the zombies.")
 
     if (choice == 1):
         
-        messagebox.showinfo("Push" , "You push the zombie off and run into a side room. As you shut the door you hear a zombie groan and are bit on the sholder.")
-        Push()
+        GiveUp()
 
     elif (choice == 2):
         
-        messagebox.showinfo("" , " When trying to grab the hammer the zombie overpowers you. Right when the zombie is about to bite you a group of three people pulls the zombie off of you. The Group asked you if you want to join them.")
-        Hammer()
+        Fight()
+
     else:
-        ER()
+        Mall()
     
 
-def Push():
+def GiveUp():
 
      messagebox.showinfo("Dead" , "")
+     Dead()
 
      
 
-def Hammer():
+def Fight():
     
     messagebox.showinfo("What to do?" , " ")
 
@@ -254,7 +254,7 @@ def Hammer():
     if (choice == 1):
         
         messagebox.showinfo("Team" , "")
-        Winner()
+        Dead()
 
     elif (choice == 2):
         
@@ -263,13 +263,13 @@ def Hammer():
     
 
     else:
-        Hammer()
+        Fight()
 
 
 def Winner():
-    messagebox.showinfo("Winner" , " ")
+    messagebox.showinfo("Winner" , "Congratulations, You and your bus full of survivors, survived the Apocalypse ")
 def Dead():
-    messagebox.showinfo("Dead" , "")
+    messagebox.showinfo("Dead" , "The zombies killed you")
 
 
 
@@ -277,6 +277,8 @@ def Dead():
 
 def Bus():
     messagebox.showinfo("Bus" , "You find a working bus and spend the rest of your life recruiting survivors to join you on the bus and help gather supplies.")
+
+    Winner()
 
 
 
