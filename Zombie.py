@@ -284,87 +284,96 @@ def Bus():
 
 ############ Brad's Functions ##############
 def StayHome():
-    choice = simpledialog.askinteger("",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    choice = simpledialog.askinteger("StayHome",
+                                     "If you decide to stay home, Choose 1, if you want to leave, Choose 2")
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
+        messagebox.showinfo("StayHome",
+                            "You choose to stay home, and hear people outside.")
+        PeopleOutside()
 
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        messagebox.showinfo("Leave",
+                       "You choose to leave your house. You see a group of people in the distance.")
+        PeopleinDistance()
     else:
-        choice2()
+        StayHome()
 
 
 
 
 
-def Hospital():
+def PeopleOutside():
 
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    messagebox.showinfo("PeopleOutside" , "You see 5 people through the blinds, they are coming right to your house, choose 1 to run out the back door, choose 2 if you want to open the door to let them in")
+    
+    choice = simpledialog.askinteger("PeopleOutside",
+                                     "You have two options: 1 is to run out the back door, 2 is to let them in.")
+    if (choice == 1):
+        messagebox.showinfo("RunOutBack",
+                            "You run out the back door into the forest behind your house, but trip and fall on a branch and a zombie kills eats you.")
+        dead()
+
+    elif (choice == 2):
+        messagebox.showinfo("LetThemIn" , "You let them in and they tie you up and take you hostage and kill you")
+        dead()
+        
+
+    else:
+        PeopleOutside()
+
+
+
+def PeopleinDistance():
+
+    messagebox.showinfo("PeopleinDistance" , "The people in the distance are holding guns and food.")
+    
+    choice = simpledialog.askinteger("PeopleinDistance",
+                                     "You have two options: 1 try and talk to them, 2 to hide behind a mailbox and let them pass.")
+    if (choice == 1):
+        messagebox.showinfo("",
+                            "You approach them and they are cannibals and kill you. The End")
+        dead() 
+
+    elif (choice == 2):
+        messagebox.showinfo("", "You hide behind the mailbox, but while hiding a zombie tackles you and brings you to the ground, you hear a loud bang and the zombie is dead. They group of people Shot the zombie and help you up.")
+        
+    
+        Help()
+    else:
+        PeopleinDistance()
+
+
+
+
+
+def Help():
+
+    messagebox.showinfo("Help" , "After you get up, they ask you if you want to join their group or go back home.")
     
     choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+                                     "You have two options: 1 to go with group, 2 for going back home. ")
     if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
-        ER()
+        messagebox.showinfo("",
+                            "You go back with the group and live safely at their barricaded town.")
+        winner()
 
     elif (choice == 2):
+        messagebox.showinfo("", "The group gets angry you won't go with them, so they take you hostage and feed you to the zombies.")
         
         
-        Doc()
+        dead()
     else:
-        Hospital()
+        Help()
 
+def winner():
 
-
-
-def Hospital():
-
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    messagebox.showinfo("" , "YOU SURVIVED!")
     
-    choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
-    if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
-        ER()
-
-    elif (choice == 2):
-        
-        
-        Doc()
-    else:
-        Hospital()
-
-
-
-
-
-def Hospital():
-
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
     
-    choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
-    if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
-        ER()
 
-    elif (choice == 2):
-        
-        
-        Doc()
-    else:
-        Hospital()
+def dead():
 
-
-
-
-
+    messagebox.showinfo("" , "SORRY YOU DIED!")
 
 
 
