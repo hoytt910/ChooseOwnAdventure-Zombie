@@ -207,7 +207,7 @@ def DownTown():
     messagebox.showinfo("DownTown" , " You have arrived Downtown and see that most of the city is overrun with Zombies already.")
     
     choice = simpledialog.askinteger("",
-                                     "You have two choices: 1 to run into to mall and gather supplies.  2 to steal a bus.")
+                                     "You have two choices: 1 to run into to mall and gather supplies.  2 to steal a bus and try and escape from the city.")
     if (choice == 1):
         messagebox.showinfo("Mall",
                             "You walk into the mall and forget to close the doors at the entrance. A horde of zombies follow you into the mall and start running towards you. You are cornered.")
@@ -247,18 +247,18 @@ def GiveUp():
 
 def Fight():
     
-    messagebox.showinfo("What to do?" , " ")
+    messagebox.showinfo("" , " You look behind you and see a baseball bat and a crow bar. ")
 
-    choice = simpledialog.askinteger("" , "")
+    choice = simpledialog.askinteger("" , "Choose 1 for the Baseball Bat, Choose 2 for the Crow Bar.")
 
     if (choice == 1):
         
-        messagebox.showinfo("Team" , "")
+        messagebox.showinfo("Bat" , "The baseball bat breaks when you hit the first Zombie and the rest of them rush at you, leaving you no time to reach for the crow bar.")
         Dead()
 
     elif (choice == 2):
         
-        messagebox.showinfo("" , " ")
+        messagebox.showinfo("" , " You grabbed the crow bar and started fighting off the zombies but more and more keep coming. There is now too many zombies for you to fight off. ")
         Dead()
     
 
