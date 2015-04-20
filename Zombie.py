@@ -109,98 +109,103 @@ def Doc():
 
 ################ Carlos Functions #####################
 def Store():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    choice = simpledialog.askinteger("Store",
+                                     "When you're at the store you run into another group, do you 1 go with them or 2 continue looking for food?  ")
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
+        messagebox.showinfo("Leave with group",
+                            "The group are cannibals!You must escape quickly")
+        Leavewithgroup()
 
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        messagebox.showinfo("Continue at store",
+                            "You need to find food")
+        Continueatstore()
     else:
-        choice2()
+        Store()
 
 
 
-def Hospital():
+def Leavewithgroup():
 
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    messagebox.showinfo("With Group" , " You find out they are cannibals. Are you next?")
     
     choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+                                     "You have two options: 1 try to escape or 2 stay with the group. ")
     if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        messagebox.showinfo("",
+                            " You try to escape, you run down an alley and manage to lose them!")
         ER()
 
     elif (choice == 2):
+        messagebox.showinfo("",
+                            "You stay with the gruop and go to thier base")
         
         
-        Doc()
+        Staywithgroup()
     else:
         Hospital()
 
 
 
-def Hospital():
+def Continueatstore():
 
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
+    messagebox.showinfo("Store" , " You see a food truck. You check and see its full of food!") 
     
     choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
+                                     "You have two options: 1 take the truck or 2 continue looking in the store. ")
     if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
+        messagebox.showinfo("",
+                            "You can't pass this up you need the food.")
+        TakeTruck()
+
+    elif (choice == 2):("",
+                        "It's to risky you'll never make it back, you go back inside.")
+   
+    
+    else:
+        Continueatstore()
+
+def TakeTruck():
+
+    messagebox.showinfo("You took the truck" , "You have to get home as fast as you can!")
+    
+    choice = simpledialog.askinteger("",
+                                     " You can take the 1 main road and save time or take the 2 backroads and take longer.")
+    if (choice == 1):
+        messagebox.showinfo("",
+                            "You take the main road and you're overun! You are dead.")
+        
+
+    elif (choice == 2):("",
+                        "You take the backroads and make it to your house. You have saved yourself and your family.")
+  
+    else:
+        TakeTruck()
+
+
+
+
+
+def ContinueLooking():
+
+    messagebox.showinfo("" , " The store is overun you have to find an exit.")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 fight off the zombies or 2 try to find an exit.")
+    if (choice == 1):
+        messagebox.showinfo("",
+                            "There's to many off them you get overun! You are dead")
         ER()
 
     elif (choice == 2):
+        messagebox.showinfo("",
+                            "You spot the exit and make a run for it, you suddenly hear gunfire! You are saved by the army. You have Survived!")
         
         
         Doc()
     else:
         Hospital()
-
-def Hospital():
-
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
-    
-    choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
-    if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
-        ER()
-
-    elif (choice == 2):
         
-        
-        Doc()
-    else:
-        Hospital()
-
-
-
-
-def Hospital():
-
-    messagebox.showinfo("Hospital" , " After entering the hospital you see two doors. One says E.R. the other says Doctors Office.")
-    
-    choice = simpledialog.askinteger("",
-                                     "You have two options: 1 for ER or 2 for Doctors Office. ")
-    if (choice == 1):
-        messagebox.showinfo("E.R.",
-                            "When opening the door to the E.R. you are faced with a zombie that tackles you to the ground.")
-        ER()
-
-    elif (choice == 2):
-        
-        
-        Doc()
-    else:
-        Hospital()
-
-
 ################ Andy Functions ############
 def DownTown():
 
