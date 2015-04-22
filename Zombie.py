@@ -113,7 +113,7 @@ def Store():
                                      "When you're at the store you run into another group, do you 1 go with them or 2 continue looking for food?  ")
     if (choice == 1):
         messagebox.showinfo("Leave with group",
-                            "The group are cannibals!You must escape quickly")
+                            "The group seems to be eating a human!You must escape quickly")
         Leavewithgroup()
 
     elif (choice == 2):
@@ -127,7 +127,7 @@ def Store():
 
 def Leavewithgroup():
 
-    messagebox.showinfo("With Group" , " You find out they are cannibals. Are you next?")
+    messagebox.showinfo("With Group" , " You find belive they are cannibals. Are you next?")
     
     choice = simpledialog.askinteger("",
                                      "You have two options: 1 try to escape or 2 stay with the group. ")
@@ -146,6 +146,45 @@ def Leavewithgroup():
         Leavewithgroup()
 
 
+def escape():
+
+    messagebox.showinfo("Escape" , " You are in dark alley. You hear zombies approaching!")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 hide in dumpster or 2 try to get into the building.")
+    if (choice == 1):
+        messagebox.showinfo("",
+                            " You hid, and waited until the zombies pass. You find a car piled with supplies and take it home.")
+        Winner()
+
+    elif (choice == 2):
+        messagebox.showinfo("",
+                            "The door is locked! The zombies surround you!")
+        
+        
+        Dead()
+    else:
+        escape()
+
+def Staywithgroup():
+
+    messagebox.showinfo("" , " They bring you to their base and kindly offer you food and drink")
+    
+    choice = simpledialog.askinteger("",
+                                     "You have two options: 1 take the food or 2  reject it and accuse them of cannabilism")
+    if (choice == 1):
+        messagebox.showinfo("",
+                            " You eat the food and sit down with them, you realize they are good poeple.")
+        Winner()
+
+    elif (choice == 2):
+        messagebox.showinfo("",
+                            "You have lost thier trust they kick you out during the night, with nothing but some food")
+        
+        
+        Dead()
+    else:
+        escape()
 
 def Continueatstore():
 
