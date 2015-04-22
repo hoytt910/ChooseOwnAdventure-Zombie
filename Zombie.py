@@ -134,16 +134,16 @@ def Leavewithgroup():
     if (choice == 1):
         messagebox.showinfo("",
                             " You try to escape, you run down an alley and manage to lose them!")
-        ER()
+        escape()
 
     elif (choice == 2):
         messagebox.showinfo("",
-                            "You stay with the gruop and go to thier base")
+                            "You stay with the group and go to thier base")
         
         
         Staywithgroup()
     else:
-        Hospital()
+        Leavewithgroup()
 
 
 
@@ -158,12 +158,14 @@ def Continueatstore():
                             "You can't pass this up you need the food.")
         TakeTruck()
 
-    elif (choice == 2):("",
-                        "It's to risky you'll never make it back, you go back inside.")
-   
-    
+    elif (choice == 2):
+        messagebox.showinfo("","It's to risky you'll never make it back, you go back inside.")
+
+        ContinueLooking()
+
     else:
         Continueatstore()
+       
 
 def TakeTruck():
 
@@ -174,10 +176,12 @@ def TakeTruck():
     if (choice == 1):
         messagebox.showinfo("",
                             "You take the main road and you're overun! You are dead.")
+        Dead()
         
 
     elif (choice == 2):("",
                         "You take the backroads and make it to your house. You have saved yourself and your family.")
+    
   
     else:
         TakeTruck()
@@ -195,17 +199,25 @@ def ContinueLooking():
     if (choice == 1):
         messagebox.showinfo("",
                             "There's to many off them you get overun! You are dead")
-        ER()
+        Dead()
 
     elif (choice == 2):
         messagebox.showinfo("",
-                            "You spot the exit and make a run for it, you suddenly hear gunfire! You are saved by the army. You have Survived!")
+                            "You spot the exit and make a run for it, you suddenly hear gunfire! You are saved by some freindly survivors who take you to thier community.")
         
         
-        Doc()
+        Winner()
     else:
-        Hospital()
-        
+        ContinueLooking()
+
+
+def Dead():
+    messagebox.showinfo("Game Over" , " You should had made better choices. You have not survived!")
+
+def Winner():
+    messagebox.showinfo("Winner", " You have survived and can live for another day Congratulations!")
+
+    
 ################ Andy Functions ############
 def DownTown():
 
